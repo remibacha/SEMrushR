@@ -1,0 +1,18 @@
+Package: SEMrushR
+Type: Package
+Title: R Interface to Access the 'SEMrush' API
+Version: 0.1.0
+Author: person("Remi", "Bacha", email = "hello@remibacha.com", role = c("aut", "cre"))
+Maintainer: Remi Bacha <hello@remibacha.com>
+Description: Implements methods for querying SEO and SEM data from 'SEMrush' using its API (<https://fr.semrush.com/api-documentation/>).
+      'SEMrush' API uses a basic authentication with an API key. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Imports:  
+    utils
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

@@ -1,0 +1,55 @@
+---
+title: "SEMrushR - R Interface To Access the SEMrush API"
+author: "Rémi Bacha"
+
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## 1. Introduction
+The package `SEMrushR` provides methods for querying SEO and SEM data from SEMrush using its API.
+SEMrush API uses a basic authentication with an API key.
+
+
+## 2. Installation
+See INSTALL for installation instructions and platform specific details.
+
+
+## 3. Functions
+
+### keyword_overview_all()
+This function provides a summary of a keyword, including its volume, CPC, competition, and the number of results in all regional databases.
+
+keyword_overview_all("tyler the creator","fr","xxxxxxxxxxxxxxxxxxx")
+
+### phrase_match_keywords()
+This function provides a list of phrase matches and alternate search queries, including particular keywords or keyword expressions.provides an extended list of related keywords, synonyms, and variations relevant to a queried term in a chosen database.
+
+phrase_match_keywords("kanye west","fr",10,"xxxxxxxxxxxxxxxxxxx")
+
+### related_keywords()
+This function provides an extended list of related keywords, synonyms, and variations relevant to a queried term in a chosen database.
+
+related_keywords("frank ocean","fr",10,"xxxxxxxxxxxxxxxxxxx")
+
+### organic_results()
+This function lists domains that are ranking in Google top 20 organic search results with a requested keyword.
+
+organic_results("travis scott","fr",100,"xxxxxxxxxxxxxxxxxxx")
+
+### semrush_keywords()
+This function provides a list of both phrase matches and related keywords to a queried term in a chosen database.
+
+semrush_keywords("asap rocky","fr",20,"xxxxxxxxxxxxxxxxxxx")
+
