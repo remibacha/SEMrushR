@@ -50,6 +50,13 @@ This function lists domains that are ranking in Google top 20 organic search res
 organic_results("travis scott","fr",100,"xxxxxxxxxxxxxxxxxxx")
 ```
 
+### 5. SEMrush Keywords
+This function provides a list of both phrase matches and related keywords to a queried term in a chosen database.
+
+```
+semrush_keywords("asap rocky","fr",20,"xxxxxxxxxxxxxxxxxxx")
+```
+
 ## Feedbacks
 Questions and feedbacks welcome!
 
