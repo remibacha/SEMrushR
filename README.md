@@ -12,6 +12,10 @@ The script is explained step by step on my blog post "[Guide complet de l’API 
 
 ## Install
 ```
+#CRAN R (official version)
+install.packages("SEMrushR")
+
+#Github (dev version)
 devtools::install_github("remibacha/SEMrushR")
 ```
 
